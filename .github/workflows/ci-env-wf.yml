@@ -29,7 +29,8 @@ jobs:
   log-defult-env:
      runs-on: ubuntu-latest
      steps:
-         - run: |
+         - name: Echo
+           run: |
                 echo "HOME: ${HOME}"
                 echo "GITHUB_WORKFLOW: ${GITHUB_WORKFLOW}"
                 echo "GITHUB_ACTION: ${GITHUB_ACTION}"
